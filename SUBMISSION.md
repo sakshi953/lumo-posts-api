@@ -1,0 +1,3 @@
+(Draft, edit in your own words before posting)
+
+I built a small AI API for Lumo Living, a fictional home and wellbeing brand, that writes Instagram captions in English, German and Spanish. Each caption follows the brand guide: word count, emoji limits, a call to action and hashtags. The API first retrieves the relevant brand rules, then sends them to an LLM, then checks the result against the same rules. If a request asks for a banned claim, such as "cures insomnia", it refuses and names the rule it broke. The project uses FastAPI, scikit-learn TF-IDF for rule retrieval and Groq's free Llama model. I built it for the Arjun Thakur Junior AI Associate coding challenge.
